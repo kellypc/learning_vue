@@ -1,8 +1,16 @@
 const MyNameApp = {
   data() {
     return {
-      name: "Matheus",
-      age: 30
+      name: "",
+      age: 30,
+      input_name: ""
+    }
+  },
+  methods: {
+    submitForm(e) {
+      e.preventDefault();
+      console.log("Estou aqui!")
+      this.name = this.input_name;
     }
   }
 }
